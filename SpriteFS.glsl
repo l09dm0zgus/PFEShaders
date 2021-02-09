@@ -153,5 +153,5 @@ void main() {
 	{
 		result += calculateSpotLight(spotLight[i]);
 	}
-    outColor =  vec4(result,1.0);
+    outColor = texture(textures[0],textureCoordinate) * vec4(result,1.0);
 }
